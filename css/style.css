@@ -1,0 +1,139 @@
+body {
+  background-image: url(../images/background2.jpg);
+  font-family: "Playfair Display", serif;
+  background-size: cover;
+  background-position: center;
+}
+
+.quote {
+  margin: 2rem 0;
+  padding: 4.5rem 1rem 1rem;
+  background-color: rgba(12, 35, 49, 0.8);
+  color: #fff;
+  box-shadow: 0 20px 20px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.quote h1 {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.quote-container {
+  min-height: 150px;
+}
+
+.quote-container #quote i {
+  font-size: 2rem; 
+  padding: 0 .3rem;
+}
+
+
+.quote .quote-container p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.quote .quote-container #quote {
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+}
+
+.quote h1::after {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 3px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+#author {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#copyButton.copied {
+  background-color: #28a745; 
+  color: #fff; 
+  border-color: #28a745;
+}
+
+#copyButton.copied:hover {
+  background-color: #218838; 
+  border-color: #218838; 
+}
+
+
+@media screen and (max-width: 1200px) {
+  .quote-container {
+    min-height: 240px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .quote-container {
+    min-height: 290px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .quote-container {
+    min-height: 360px;
+  }
+
+  .quote h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .quote .quote-container p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+.quote .quote-container #quote {
+  font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .quote-container #quote i {
+  font-size: 1.5rem; 
+}
+}
+
+@media screen and (max-width: 328px) {
+    .d-flex{
+        width: 80%;
+    }
+    button.order1{
+        order: 1;
+    }
+     button.order2{
+        order: 2;
+    }
+     button.order3{
+        order: 3;
+    }
+     button.order4{
+        order: 4;
+    }
+     button.order5{
+        order: 5;
+    }
+
+}
+
